@@ -1,1 +1,91 @@
-<h1>hello</h1><h2>Welcome 5aweja PATRICE</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out infinite alternate;
+        }
+
+        .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+            border-radius: 50%;
+            background-color: #61dafb;
+            animation: bounce 1.5s ease-in-out infinite;
+        }
+
+        .circle:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .circle:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .circle:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+
+        .circle:nth-child(5) {
+            animation-delay: 1.2s;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Coming Soon</h1>
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>
