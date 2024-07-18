@@ -295,7 +295,22 @@
 
     }; // end ssBackToTop
 
-
+/* calculate and set year of experience
+ * ----------------------------------------------------------- */
+        // JavaScript to calculate years of experience dynamically
+        const setYearsOfExperience = function() {
+            document.addEventListener('DOMContentLoaded', function() {
+            var startDate = new Date('2014-07-01'); // Replace with your start date
+            var currentDate = new Date();
+            var yearsOfExperience = currentDate.getFullYear() - startDate.getFullYear();
+        
+            // Update all elements with the 'experience-placeholder' class
+            var placeholders = document.getElementsByClassName('experience-placeholder');
+            for (var i = 0; i < placeholders.length; i++) {
+                placeholders[i].innerHTML = placeholders[i].innerHTML.replace('{{experience-placeholder}}', yearsOfExperience);
+            }
+        })
+    };
 
    /* initialize
     * ------------------------------------------------------ */
@@ -311,7 +326,7 @@
         ssAlertBoxes();
         ssSmoothScroll();
         ssBackToTop();
-
+        setYearsOfExperience();
     })();
 
 })(document.documentElement);
