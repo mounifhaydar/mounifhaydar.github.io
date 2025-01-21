@@ -1,0 +1,15 @@
+We believe in the philosophy of "less is more" and "simplicity is key,"
+
+
+There are seven principles defined in ITIL®4, which are listed below;
+
+Focus on value
+Start where you are
+Progress iteratively with feedback
+Collaborate and promote visibility
+Think and work holistically
+Keep it simple and practical
+Optimize and automate
+
+
+https://www.knowledgehut.com/tutorials/itil4-tutorial/itil-guiding-principles
