@@ -135,8 +135,9 @@
                     <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
                     <li><a class="smoothscroll" href="#about">About</a></li>
                     <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    
+                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
                     <!--
-                    <li style="display: none;"><a class="smoothscroll" href="#portfolio">Works</a></li>
                     <li style="display: none;"><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
                     -->
                     <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
@@ -378,12 +379,16 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
                         <strong>Angular</strong>
                         </li>
                         <li>
+                            <div class="progress percent80"></div>
+                            <strong>React.js</strong>
+                        </li>
+                        <li>
                         <div class="progress percent90"></div>
                         <strong>Java</strong>
                         </li>
                         <li>
                             <div class="progress percent80"></div>
-                            <strong>Dot NET</strong>
+                            <strong>.NET</strong>
                             </li>
                         <li>
                         <div class="progress percent75"></div>
@@ -401,25 +406,27 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
 
     <!-- portfolio
     ================================================== -->
-  
-    <section id="portfolio" class="s-portfolio target-section" style="display: none;">
+  <!--style="display: none;"-->
+    <section id="portfolio" class="s-portfolio target-section" >
         <div class="row s-portfolio__header">
             <div class="column large-12">
                 <h3>A Few Of My Latest Creations</h3>
             </div>
         </div>
 
-        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list" style="display: flex;
+        justify-content: center;
+        text-align: center;">
 
-            <div class="column folio-item">
+            <div class="column folio-item" style="display: flex; justify-content: center;">
                 <a href="#modal-01" class="folio-item__thumb">
-                    <img src="images/portfolio/droplet.jpg" 
-                         srcset="images/portfolio/droplet.jpg 1x, 
-                                 images/portfolio/droplet@2x.jpg 2x" alt="">
+                    <img src="images/portfolio/jsonCompare.jpg" 
+                         srcset="images/portfolio/jsonCompare.jpg 1x, 
+                                 images/portfolio/jsonCompare@2x.jpg 2x" alt="">
                 </a>
             </div> <!-- end folio-item -->
 
-            <div class="column folio-item">
+            <div class="column folio-item" style="display: none;">
                 <a href="#modal-02" class="folio-item__thumb">
                     <img src="images/portfolio/lamp.jpg" 
                          srcset="images/portfolio/lamp.jpg 1x, 
@@ -427,7 +434,7 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
                 </a>
             </div> <!-- end folio-item -->
 
-            <div class="column folio-item">
+            <div class="column folio-item" style="display: none;">
                 <a href="#modal-03" class="folio-item__thumb">
                     <img src="images/portfolio/minimalismo.jpg" 
                          srcset="images/portfolio/minimalismo.jpg 1x, 
@@ -435,7 +442,7 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
                 </a>
             </div> <!-- end folio-item -->
 
-            <div class="column folio-item">
+            <div class="column folio-item" style="display: none;">
                 <a href="#modal-04" class="folio-item__thumb">
                     <img src="images/portfolio/shutterbug.jpg" 
                          srcset="images/portfolio/shutterbug.jpg 1x, 
@@ -443,7 +450,7 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
                 </a>
             </div> <!-- end folio-item -->
 
-            <div class="column folio-item">
+            <div class="column folio-item" style="display: none;">
                 <a href="#modal-05" class="folio-item__thumb">
                     <img src="images/portfolio/fuji.jpg" 
                          srcset="images/portfolio/fuji.jpg 1x, 
@@ -451,7 +458,7 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
                 </a>
             </div> <!-- end folio-item -->
 
-            <div class="column folio-item">
+            <div class="column folio-item" style="display: none;">
                 <a href="#modal-06" class="folio-item__thumb">
                     <img src="images/portfolio/skaterboy.jpg" 
                          srcset="images/portfolio/skaterboy.jpg 1x, 
@@ -459,7 +466,7 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
                 </a>
             </div> <!-- end folio-item -->
 
-            <div class="column folio-item">
+            <div class="column folio-item" style="display: none;">
                 <a href="#modal-07" class="folio-item__thumb">
                     <img src="images/portfolio/rucksack.jpg" 
                          srcset="images/portfolio/rucksack.jpg 1x, 
@@ -467,7 +474,7 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
                 </a>
             </div> <!-- end folio-item -->
 
-            <div class="column folio-item">
+            <div class="column folio-item" style="display: none;">
                 <a href="#modal-08" class="folio-item__thumb">
                     <img src="images/portfolio/sanddunes.jpg" 
                          srcset="images/portfolio/sanddunes.jpg 1x, 
@@ -482,18 +489,21 @@ Optimizing security using technologies like Spring Security, OAuth2, and Keycloa
         =========================================================== -->
         <div id="modal-01" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-droplet.jpg" alt="" />
+                <img src="images/portfolio/gallery/g-jsonCompare.jpg" alt="" style="
+                max-height: 46vh;
+                width: 100%;
+            " />
     
                 <div class="modal-popup__desc">
-                    <h5>Droplet</h5>
-                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <h5>JSON Compare</h5>
+                    <p>JSON Compare is a powerful web service designed to help you compare and analyze JSON data efficiently. Whether you're dealing with configuration files, API responses, or any other JSON data, JSON Compare makes it easy to identify differences and similarities.</p>
                     <ul class="modal-popup__cat">
-                        <li>Branding</li>
-                        <li>Product Design</li>
+                        <li>WebSite</li>
+                        <li>Microservice</li>
                     </ul>
                 </div>
     
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                <a href="https://jsoncomparator.netlify.app/" class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
 
